@@ -359,13 +359,13 @@ render(c==='Todos'?products:products.filter(p=>p.cat===c));
 function checkout(){
 if(!cart.length) return;
 
-let msg="*PEDIDO - LA DELICIA*\n\n";
+let msg="*PEDIDO - Su Negocio*\n\n";
 
 cart.forEach(i=>{
 msg+=`• ${i.qty} ${i.name} - Bs. ${i.qty*i.price}\n`;
 });
 
-const url="https://wa.me/59176806191?text="+encodeURIComponent(msg);
+const url="https://wa.me/591775179990?text="+encodeURIComponent(msg);
 window.open(url,'_blank');
 }
 
